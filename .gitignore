@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Temporary files
+temp_crop/
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+
+# Model/checkpoint sementara
+checkpoint-*/
+
+best_kfold_model/

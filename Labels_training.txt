@@ -1,0 +1,667 @@
+703.jpg|Pastikan tulisan tidak buram
+162.jpg|nasi goreng 7 84000
+677.jpg|Nomor faktur : INV-2025-041
+240.jpg|milku 6 36000
+678.jpg|Andi menulis laporan dikelas
+373.jpg|Qtela 9 18000
+405.jpg|Oreo 1 8000
+490.jpg|Simpanan wajib dibayar rutin
+597.jpg|Semua file aman tersimpan di Google Drive
+94.jpg|donat 10 30000
+83.jpg|crystaline 8 24000
+290.jpg|oreo 11 88000
+365.jpg|Nextar 2 4000
+224.jpg|Pizza 12 120000
+214.jpg|coca cola 12 60000
+65.jpg|stopmap 1 2000
+56.jpg|Cocacola 8 40000
+506.jpg|Laptop saya kehabisan baterai
+217.jpg|nipis madu 3 21000
+159.jpg|Crystaline 9 27000
+113.jpg|kentaki 10 100000
+550.jpg|Terima kasih telah berbelanja
+476.jpg|pizza mini 2 4000
+517.jpg|Model
+581.jpg|Evaluasi dilakukan diakhir minggu
+680.jpg|Dimas menabung setiap minggu
+343.jpg|Donat 2 6000
+348.jpg|stopmap 2 4000
+310.jpg|crystaline 3 9000
+78.jpg|Aqua 1 4000
+304.jpg|crystaline 1 3000
+593.jpg|Total bayar : Rp15.000
+512.jpg|Optimizer : AdamW, learning rate 5e - 5
+139.jpg|pisang coklat 5 15000
+140.jpg|pisang coklat 10 30000
+105.jpg|sate usus 3 9000
+74.jpg|floridina 7 35000
+487.jpg|stopmap 2 2000
+11.jpg|rames ayam 5 60000
+697.jpg|Error code : 404 Not Found
+618.jpg|Saldo akhir : Rp8.000
+327.jpg|Rames ayam 7 84000
+32.jpg|roti bread shop banana 5 40000
+196.jpg|gorengan 5 5000
+575.jpg|Model lama belum akurat
+203.jpg|le mineral 11 44000
+419.jpg|nutriboost 9 63000
+122.jpg|Aqua 10 40000
+57.jpg|cocacola 10 50000
+262.jpg|floridina 12 60000
+654.jpg|TestData100
+208.jpg|le mineral 12 48000
+79.jpg|Aqua 6 24000
+610.jpg|Semua file dilatih ulang
+80.jpg|Aqua 5 20000
+679.jpg|Rika membeli minuman di koperasi
+312.jpg|Pizza mini 12 120000
+231.jpg|donat 9 90000
+491.jpg|Pencairan pinjaman disetujui pengurus
+185.jpg|beng beng 9 18000
+168.jpg|nextar 11 22000
+124.jpg|Aqua 3 12000
+3.jpg|beng beng 9 18000
+169.jpg|nextar 6 12000
+644.jpg|Sisa saldo = Rp 12.000
+705.jpg|Tulis dengan huruf sambung
+623.jpg|Angka satu sampai sepuluh terbaca baik
+292.jpg|oreo 7 56000
+62.jpg|stopmap 2 4000
+137.jpg|pisang coklat 9 27000
+31.jpg|roti bread shop banana 9 72000
+71.jpg|floridina 4 20000
+299.jpg|Roti bread shop banana 9 72000
+520.jpg|Label file dinamai labels.txt.
+46.jpg|le mineral 8 32000
+72.jpg|floridina 10 50000
+595.jpg|Simpanan pokok Rp.10.000 perbulan
+186.jpg|beng beng 10 20000
+351.jpg|stopmap 2 4000
+513.jpg|Training berlangsung selama 10 epoch
+492.jpg|Anggota baru wajib melengkapi data diri.
+180.jpg|beng beng 3 6000
+522.jpg|The result is saved automatically
+67.jpg|stopmap 3 9000
+408.jpg|Oreo 10 80000
+51.jpg|Le mineral 4 28000
+152.jpg|roti bread shop banana 4 32000
+287.jpg|qtela 12 24000
+40.jpg|crystaline 7 21000
+639.jpg|Ss Tt Uu Vv Ww Xx Yy Zz
+693.jpg|Run command : python train.py
+7.jpg|beng beng 1 2000
+616.jpg|Label berhasil diproses
+706.jpg|Tulis juga dengan huruf cetak
+213.jpg|coca cola 7 35000
+438.jpg|beng beng 2 4000
+135.jpg|pisang coklat 12 36000
+577.jpg|Data baru akan ditambahkan besok
+277.jpg|nasi goreng 8 96000
+668.jpg|Mohon periksa koneksi internet anda
+89.jpg|pizza mini 10 100000
+592.jpg|Pembeli : Rani
+339.jpg|Pizza mini 4 40000
+514.jpg|Setiap path berisi 8 data
+663.jpg|Akurasi sistem bergantung pada kualitas data
+300.jpg|Roti bread shop banana 5 40000
+383.jpg|kentaki 3 30000
+42.jpg|gorengan 3 3000
+323.jpg|Beng beng 10 20000
+112.jpg|kentaki 3 30000
+222.jpg|Pizza 8 80000
+58.jpg|cocacola 8 40000
+249.jpg|pisang coklat 3 9000
+628.jpg|Akurasi model meningkat setelah ditambah data
+372.jpg|Nextar 5 10000
+136.jpg|pisang coklat 6 18000
+319.jpg|beng beng 2 4000
+254.jpg|sate usus 1 3000
+25.jpg|nipis madu 9 63000
+403.jpg|Oreo 7 56000
+537.jpg|OCR mampu membaca tulisan angka dengan baik
+691.jpg|(total) = 5000 + 2500 = 7500
+255.jpg|sate usus 12 36000
+640.jpg|0 1 2 3 4 5 6 7 8 9
+114.jpg|kentaki 9 90000
+266.jpg|floridina 4 20000
+85.jpg|crystaline 3 9000
+554.jpg|Nama saya Ahmad Maulana
+511.jpg|Loss Function menggunakan cross entrofy
+579.jpg|label dicek ulang sebelum training
+448.jpg|rames ayam 4 48000
+509.jpg|Model menggunakan arsitektur visionEncoderDecoder
+215.jpg|coca cola 6 30000
+19.jpg|gorengan 7 7000
+239.jpg|milku 4 24000
+418.jpg|nutriboost 10 70000
+284.jpg|qtela 2 4000
+63.jpg|stopmap 8 16000
+149.jpg|roti bread shop banana 7 56000
+364.jpg|Nasi goreng 11 132000
+30.jpg|roti bread shop banana 11 88000
+167.jpg|nasi goreng 8 96000
+329.jpg|Rames ayam 10 120000
+664.jpg|Tulisan miring sering menyebabkan kesalahan baca
+489.jpg|2x lipat lebih cepat dari sistem lama.
+564.jpg|Nomor anggota saya adalah 1024
+178.jpg|oreo 4 32000
+354.jpg|floridina 12 60000
+345.jpg|Donat  4 12000
+314.jpg|Pizza mini 1 10000
+665.jpg|Model belajar dari setiap kesalahan prediksi
+591.jpg|Kasir : Budi
+594.jpg|Kembalian : Rp.2000
+212.jpg|coca cola 7 35000
+669.jpg|FIle berhasil disimpan di folder output
+280.jpg|nextar 5 10000
+626.jpg|Dataset dilengkapi gambar dan label.
+426.jpg|nutriboost 2 14000
+685.jpg|Iqbal memperbaiki kesalahan data
+283.jpg|nextar 10 20000
+395.jpg|Nasi goreng 2 24000
+108.jpg|sate usus 5 15000
+118.jpg|nutriboost 8 56000
+641.jpg|Email : test@ocr.id
+649.jpg|AbCdEfGhIjKlMn
+501.jpg|abcdefghijklmnopqrstuvwxyz
+662.jpg|Kecepatan deteksi meningkat setelah optimasi
+8.jpg|beng beng 12 24000
+93.jpg|pizza mini 7 70000
+544.jpg|Total harga : Rp22.500
+367.jpg|Nextar 10 20000
+530.jpg|Augmentasi digunakan untuk memperbanyak data.
+414.jpg|kentaki 4 40000
+350.jpg|stopmap 12 24000
+561.jpg|Pengguna harus login terlebih dahulu
+144.jpg|nipis madu 9 63000
+461.jpg|coca cola 6 30000
+45.jpg|gorengan 5 5000
+43.jpg|gorengan 4 4000
+75.jpg|floridina 5 25000
+171.jpg|nextar 12 24000
+252.jpg|sate usus 10 30000
+624.jpg|Simbol "@" dan "#" dikenali dengan benar
+68.jpg|stopmap 9 18000
+12.jpg|rames ayam 1 12000
+219.jpg|Pizza 9 90000
+586.jpg|kode barang : ABC-1001
+464.jpg|coca cola 4 20000
+344.jpg|Donat 10 30000
+631.jpg|Pembeli : Ahmad
+667.jpg|Sistem login gagal tiga kali
+647.jpg|Data_Train_001
+181.jpg|beng beng 1 2000
+451.jpg|gorengan 1 1000
+435.jpg|Beng beng 3 6000
+86.jpg|pizza mini 8 80000
+615.jpg|Semua gambar terbaca sempurna
+341.jpg|Donat 3 9000
+455.jpg|le mineral 2 8000
+81.jpg|crystaline 1 3000
+24.jpg|nipis madu 8 56000
+253.jpg|sate usus 2 6000
+368.jpg|Nextar 3 6000
+216.jpg|nipis madu 4 28000
+265.jpg|floridina 5 25000
+263.jpg|floridina 10 50000
+634.jpg|Total : Rp9.000
+307.jpg|crystaline 8 24000
+141.jpg|nipis madu 3 21000
+295.jpg|oreo 7 56000
+34.jpg|roti bread shop banana 12 96000
+225.jpg|donat 7 70000
+569.jpg|Mesin OCR membaca tulisan dengan cepat.
+10.jpg|rames ayam 12 144000
+23.jpg|nipis madu 5 35000
+374.jpg|Qtela 6 12000
+613.jpg|Program selesai tanpa error
+695.jpg|Warning : low accuracy detected
+321.jpg|Beng beng 8 16000
+87.jpg|pizza mini 11 11000
+684.jpg|Vina mengetik laporan bulanan
+338.jpg|Pizza mini 5 5000
+536.jpg|Versi terbaru mendukung karakter simbol.
+560.jpg|total belanja anggota mencapai seratus ribu
+207.jpg|le mineral 8 32000
+200.jpg|gorengan 12 12000
+574.jpg|Hari ini saya menulis dataset baru
+97.jpg|donat 5 15000
+376.jpg|Qtela 11 22000
+673.jpg|Label diperbarui secara otomatis
+362.jpg|Nasi goreng 6 72000
+652.jpg|HTR_Model_v3
+29.jpg|nipis madu 1 7000
+188.jpg|rames ayam 8 96000
+580.jpg|Training berjalan lancar
+271.jpg|aqua 5 20000
+182.jpg|beng beng 5 10000
+281.jpg|nextar 6 12000
+157.jpg|Crystaline 2 6000
+77.jpg|floridina 3 15000
+394.jpg|Nutriboost 2 14000
+96.jpg|donat 7 21000
+389.jpg|Nutriboost 6 42000
+70.jpg|floridina 10 50000
+346.jpg|stopmap 1 2000
+366.jpg|Nextar 11 22000
+573.jpg|Hasil prediksi 98% akurat.
+192.jpg|rames ayam 9 108000
+16.jpg|rames ayam 4 4800
+466.jpg|coca cola 2 10000
+270.jpg|aqua 1 4000
+241.jpg|milku 7 42000
+235.jpg|stopmap 2 4000
+91.jpg|pizza mini 12 120000
+675.jpg|Model diunggah ke repository
+121.jpg|Aqua 5 20000
+531.jpg|Proses training membutuhkan waktu cukup lama
+590.jpg|Keuntungan : Rp500
+243.jpg|pisang coklat 9 27000
+1.jpg|beng beng 7 14000
+702.jpg|Hindari bayangan saat memfoto
+478.jpg|pizza mini 1 2000
+521.jpg|Training start at 10:00 AM
+328.jpg|Rames ayam 4 48000
+120.jpg|nutriboost 11 77000
+232.jpg|donat 10 100000
+298.jpg|Roti bred shop banana 3 24000
+308.jpg|crystaline 2 6000
+431.jpg|nasi goreng 6 72000
+148.jpg|roti bread shop banana 7 56000
+369.jpg|Nextar 9 18000
+361.jpg|Nasi goreng 11 132000
+645.jpg|Data versi 2.1 sudah diperbarui
+600.jpg|Huruf miring lebih sering terbaca salah
+274.jpg|aqua 1 4000
+462.jpg|coca cola 1 5000
+48.jpg|Le mineral 11 44000
+267.jpg|floridina 6 30000
+199.jpg|gorengan 3 3000
+709.jpg|Gunakan garis bawah untuk angka penting
+599.jpg|Tulisan kecil lebih sulit dikenali
+111.jpg|kentaki 10 100000
+457.jpg|le mineral 3 12000
+529.jpg|tanggal jatuh tempo : 31-12-2025
+566.jpg|Tanggal transaksi 10 oktober 2025
+672.jpg|Gambar diubah ke format PNG
+336.jpg|Gorengan 10 10000
+638.jpg|Jj Kk Ll Mm Nn Oo Pp Qq Rr
+320.jpg|Beng beng 7 14000
+183.jpg|beng beng 7 14000
+335.jpg|Gorengan 9 9000
+153.jpg|Crystaline 11 33000
+128.jpg|Milku 10 60000
+572.jpg|Data testing diambil secara acak
+619.jpg|File log diperbarui setiap epoch
+189.jpg|rames ayam 2 24000
+415.jpg|kentaki 5 50000
+456.jpg|le mineral 1 4000
+700.jpg|Coba tulis dengan pena hitam
+330.jpg|Rames ayam 2 24000
+658.jpg|Gambar diolah menjadi teks secara otomatis
+146.jpg|roti bread shop banana 12 96000
+145.jpg|nipis madu 12 84000
+381.jpg|kentaki 7 70000
+20.jpg|gorengan 3 3000
+176.jpg|oreo 1 8000
+584.jpg|Poin loyalitas : 120/200
+13.jpg|rames ayam 4 48000
+313.jpg|Pizza mini 12 120000
+26.jpg|nipis madu 3 21000
+523.jpg|OCR system works properly
+173.jpg|qtela 2 4000
+555.jpg|Uang kas dibayar setiap hari jumat
+391.jpg|Nutriboost 9 63000
+250.jpg|sate usus 4 12000
+306.jpg|crystaline 10 30000
+496.jpg|Pengembalian dicatat otomatis
+278.jpg|nasi goreng 5 60000
+158.jpg|crystaline 2 6000
+130.jpg|Milku 11 66000
+708.jpg|Jangan gunakan stabilo di tulisan
+293.jpg|oreo 5 40000
+117.jpg|kentaki 12 120000
+622.jpg|Model belajar huruf a sampai z.
+177.jpg|oreo 12 96000
+342.jpg|Donat 4 12000
+59.jpg|cocacola 3 15000
+432.jpg|nasi goreng 2 24000
+226.jpg|donat 5 50000
+286.jpg|qtela 7 14000
+18.jpg|gorengan 10 10000
+629.jpg|kas tanggal 27/10/2025
+331.jpg|Gorengan 1 1000
+261.jpg|floridina 12 60000
+549.jpg|Nota no : NT-2025-08
+682.jpg|Rani menyetor uang dikasir
+194.jpg|rames ayam 11 1
+428.jpg|nasi goreng 1 12000
+630.jpg|Pembayaran via tunai
+356.jpg|floridina 10 50000
+98.jpg|donat 6 18000
+184.jpg|beng beng 1 2000
+309.jpg|crystaline 11 33000
+559.jpg|Admin memverifikasi setiap anggota
+497.jpg|Total simpanan : Rp 120.000
+488.jpg|Harga barang A adalah Rp.5000
+596.jpg|Uang masuk : Rp15000
+6.jpg|beng beng 1 2000
+47.jpg|Le mineral 9 36000
+696.jpg|Training complete
+556.jpg|Buku laporan koperasi telah lengkap
+528.jpg|Validation accuracy reaches 94 percent
+17.jpg|gorengan 10 10000
+50.jpg|Le mineral 1 4000
+688.jpg|ID anggota : kop12345
+653.jpg|OCR_Engine_test
+4.jpg|beng beng 9 18000
+472.jpg|nipis madu 3 21000
+396.jpg|Nasi goreng 8 96000
+325.jpg|Rames ayam 9 108000
+289.jpg|oreo 2 16000
+507.jpg|Semua tugas telah dikumpulkan tepat waktu .
+291.jpg|oreo 12 96000
+701.jpg|Gunakan kertas putih polos
+229.jpg|donat 5 50000
+27.jpg|nipis madu 12 84000
+568.jpg|Petugas menginput data manual
+269.jpg|aqua 8 32000
+52.jpg|Le mineral 8 32000
+378.jpg|sate usus 7 21000
+233.jpg|stopmap 12 24000
+38.jpg|crystaline 7 21000
+161.jpg|nutriboost 11 77000
+242.jpg|milku 4 24000
+683.jpg|Budi lupa membawa buku catatan
+388.jpg|Nutriboost 9 63000
+384.jpg|kentaki 11 110000
+179.jpg|oreo 10 80000
+606.jpg|Model siap digunakan untuk prediksi
+656.jpg|Dataset_V2
+198.jpg|gorengan 2 2000
+646.jpg|A1B2C3D4E5
+690.jpg|100% satisfaction guaranteed!
+687.jpg|Semua anggota hadir dirapat
+614.jpg|Training ulang dimulai besok
+69.jpg|stopmap 3 6000
+588.jpg|Harga beli : Rp2.500
+172.jpg|nextar 7 14000
+440.jpg|beng beng 5 10000
+166.jpg|nasi goreng 2 24000
+318.jpg|beng beng 9 18000
+197.jpg|gorengan 3 3000
+482.jpg|pizza mini 4 8000
+379.jpg|sate usus 4 12000
+398.jpg|Qtela 5 10000
+698.jpg|Prediction result : "total 10000"
+156.jpg|Crystaline 3 9000
+524.jpg|Accuracy improved after fine-tuning
+655.jpg|Diskon 10% untuk anggota aktif
+230.jpg|donat 9 90000
+452.jpg|gorengan 6 6000
+578.jpg|Semua gambar sudah diunggah
+107.jpg|sate usus 2 6000
+542.jpg|Harga satuan : Rp4.500
+76.jpg|floridina 4 20000
+119.jpg|nutriboost 4 28000
+686.jpg|Rika dan dimas berangkat pagi
+123.jpg|Aqua 5 20000
+538.jpg|Model dioptimalkan untuk tulisan tangan mahasiswa
+155.jpg|Crystaline 12 36000
+425.jpg|nutriboost 2 14000
+671.jpg|Proses selesai dalam 2 jam 15 menit
+211.jpg|coca cola 5 25000
+453.jpg|gorengan 2 2000
+493.jpg|Jumlah pinjaman Rp.1000.000
+468.jpg|nipis madu 2 14000
+558.jpg|Sistem berjalan tanpa error
+9.jpg|rames ayam 11 132000
+526.jpg|Data augmentation increases variety
+37.jpg|roti bread shop banana 2 16000
+143.jpg|nipis madu 6 42000
+259.jpg|stopmap 6 12000
+311.jpg|crystaline 8 24000
+533.jpg|Semua label disimpan dalam file labels.txt
+617.jpg|Output disimpan ke folder result
+382.jpg|kentaki 7 7000
+61.jpg|donat 1 3000
+115.jpg|kentaki 11 110000
+495.jpg|Denda keterlambatan 2%
+508.jpg|Gambar diresize ke 224x224 piksel
+565.jpg|Setiap simpanan dicatat di buku besar
+268.jpg|aqua 1 4000
+602.jpg|Saya puas dengan hasil penelitian
+305.jpg|crystaline 4 12000
+445.jpg|rames ayam 6 72000
+154.jpg|Crystaline 5 15000
+470.jpg|nipis madu 1 7000
+272.jpg|aqua 4 16000
+621.jpg|Tulisan tangan saya berubah setiap hari
+371.jpg|Nextar 2 4000
+633.jpg|Qty : 3
+39.jpg|crystaline 9 27000
+131.jpg|Milku 3 18000
+454.jpg|le mineral 2 8000
+447.jpg|rames ayam 1 12000
+315.jpg|Pizza mini 4 40000
+202.jpg|le mineral 10 40000
+363.jpg|Nasi goreng 6 72000
+500.jpg|ABCDEFGHIJKLMNOPQRSTUVWXYZ
+150.jpg|roti bread shop banana 12 96000
+494.jpg|Jatuh tempo pinjaman 30 hari
+661.jpg|Model dievaluasi menggunakan data uji
+612.jpg|Dataset lama dihapus otomatis
+450.jpg|gorengan 8 8000
+486.jpg|stopmap 3 3000
+635.jpg|Terima kasih
+151.jpg|roti bread shop banana 11 88000
+585.jpg|Nomor nota : NT- 00123
+360.jpg|Nasi goreng 9 108000
+334.jpg|Gorengan 3 3000
+543.jpg|Jumlah beli : 5pcs
+127.jpg|Milku 12 72000
+660.jpg|Setiap karakter dilatih agar mudah dikenali
+100.jpg|donat 5 15000
+147.jpg|roti bread shop banana 8 64000
+244.jpg|pisang coklat 2 6000
+411.jpg|kentaki 12 120000
+525.jpg|Test image predicted correctly
+101.jpg|pisang coklat 12 36000
+385.jpg|kentaki 6 6000
+333.jpg|Gorengan 2 2000
+285.jpg|qtela 12 24000
+301.jpg|Roti bread shop banana 10 80000
+260.jpg|stopmap 7 14000
+421.jpg|nutriboost 2 14000
+126.jpg|Milku 6 36000
+187.jpg|beng beng 1 2000
+206.jpg|le mineral 5 20000
+479.jpg|pizza mini 3 6000
+332.jpg|Gorengan 11 11000
+251.jpg|sate usus 2 6000
+446.jpg|rames ayam 3 36000
+201.jpg|gorengan 12 12000
+582.jpg|Hasil prediksi makin akurat
+642.jpg|Website : www.koperasi.id
+175.jpg|qtela 10 20000
+632.jpg|Barang : Pena biru
+540.jpg|Laba bersih mencapai Rp3.500.000
+129.jpg|Milku 3 18000
+423.jpg|nutriboost 3 21000
+570.jpg|Program ini dibuat menggunakan Python
+562.jpg|Nilai rata-rata = 87.5%
+227.jpg|donat 3 30000
+601.jpg|Pengujian dilakukan dengan gambar baru
+352.jpg|floridina 1 5000
+55.jpg|Cocacola 7 35000
+223.jpg|Pizza 12 120000
+133.jpg|Milku 6 36000
+648.jpg|Logfile2025_ok
+546.jpg|Pembeli : Ahmad Maulana
+190.jpg|rames ayam 12 144000
+651.jpg|PasswordXYZ
+481.jpg|pizza mini 6 12000
+576.jpg|Saya ingin hasil yang lebih baik
+104.jpg|sate usus 2 6000
+557.jpg|Data transaksi disimpan otomatis
+401.jpg|Oreo 1 8000
+689.jpg|$12.50 discount applied
+302.jpg|Roti bread shop banana 7 56000
+552.jpg|Hari ini sangat cerah di kampus
+273.jpg|aqua 3 12000
+53.jpg|Le mineral 1 4000
+484.jpg|stopmap 1 1000
+539.jpg|Fungsi evaluasi menghitung nilai akurasi dan loss.
+116.jpg|kentaki 5 50000
+236.jpg|stopmap 3 6000
+620.jpg|Dataset baru berjumlah dua ratus gambar
+387.jpg|kentaki 6 60000
+238.jpg|milku 2 12000
+571.jpg|Model belajar mengenali pola tulisan.
+326.jpg|Rames ayam 11 132000
+436.jpg|beng beng 7 14000
+637.jpg|Aa Bb Cc Dd Ee Ff Gg Hh Ii
+370.jpg|Nextar 1 2000
+264.jpg|floridina 7 35000
+288.jpg|qtela 4 8000
+390.jpg|Nutriboost 10 70000
+399.jpg|Qtela 3 6000
+228.jpg|donat 7 70000
+676.jpg|Evaluasi selesai tanpa error
+587.jpg|Jumlah stok : 25 unit
+516.jpg|Checkpoint disimpan setiap epo
+359.jpg|Nasi goreng 9 108000
+548.jpg|Kode barang : BRG0
+699.jpg|5 liter bensin dibeli hari ini
+659.jpg|Dataset berisi tulisan tangan dengan berbagai gaya
+674.jpg|Dataset disiapkan untuk pelatihan
+88.jpg|pizza mini 7 70000
+247.jpg|pisang coklat 1 3000
+163.jpg|nasi goreng 8 96000
+567.jpg|Semua data dienkripsi secara aman.
+36.jpg|roti bread shop banana 12 96000
+583.jpg|Saya senang melihat peningkatan ini
+174.jpg|qtela 9 18000
+611.jpg|Versi model disimpan di cloud
+681.jpg|Siti mencatat pengeluaran harian
+670.jpg|Training dimulai pukul 08.00 WIB
+99.jpg|donat 6 18000
+245.jpg|pisang coklat 2 6000
+504.jpg|File path : c:\data\ocr\images
+625.jpg|Sistem membaca nota koperasi mahasiswa
+210.jpg|coca cola 10 50000
+407.jpg|Oreo 3 24000
+416.jpg|kentaki 3 30000
+650.jpg|Username123
+221.jpg|Pizza 2 20000
+5.jpg|beng beng 6 12000
+636.jpg|Total belanja : Rp 25.450
+589.jpg|Harga jual : Rp 3000
+102.jpg|sate usus 2 6000
+430.jpg|nasi goreng 5 60000
+545.jpg|Kasir : Rina Andriani
+49.jpg|Le mineral 7 28000
+33.jpg|roti bread shop banana 11 88000
+204.jpg|le mineral 8 32000
+138.jpg|pisang coklat 12 36000
+28.jpg|nipis madu 10 70000
+627.jpg|OCR menghasilkan teks sesuai input
+234.jpg|stopmap 2 4000
+532.jpg|Dataset ditulis manual menggunakan pulpen
+392.jpg|Nutriboost 7 49000
+294.jpg|oreo 1 8000
+449.jpg|gorengan 3 3000
+406.jpg|Oreo 3 24000
+541.jpg|Nama barang : Buku tulis
+142.jpg|nipis madu 11 77000
+64.jpg|stopmap 6 12000
+515.jpg|GPU digunakan untuk mempercepat proses
+132.jpg|Milku 12 72000
+692.jpg|Path :./dataset/images/train
+563.jpg|File sudah diunggah ke server
+66.jpg|stopmap 7 14000
+15.jpg|rames ayam 10 120000
+160.jpg|nutriboost 3 21000
+41.jpg|gorengan 7 7000
+535.jpg|Folder dataset berisi gambar dan tabel
+393.jpg|Nutriboost 3 21000
+191.jpg|rames ayam 12 144000
+220.jpg|Pizza 6 60000
+54.jpg|Cocacola 7 35000
+347.jpg|stopmap 8 16000
+303.jpg|Roti bread shop banana 7 56000
+256.jpg|sate usus 3 9000
+505.jpg|Hari senin hujan deras sekali
+499.jpg|Sistem mencetak nota transaksi
+707.jpg|Campurkan huruf besar dan kecil
+275.jpg|milku 7 42000
+205.jpg|le mineral 8 32000
+165.jpg|nasi goreng 5 60000
+598.jpg|Folder backup dibuat otomatis
+422.jpg|nutriboost 8 56000
+520.jpg|Label fi
+109.jpg|sate usus 12 36000
+608.jpg|Akurasi akhir mencapai 95 persen.
+404.jpg|Oreo 1 8000
+2.jpg|beng beng 2 4000
+666.jpg|Pembayaran dilakukan via QRIS
+604.jpg|Semua karakter huruf dan angka terwakili
+82.jpg|crystaline 6 18000
+209.jpg|coca cola 11 55000
+35.jpg|roti bread shop banana 4 32000
+551.jpg|Jumlah anggota aktif : 57 orang
+460.jpg|coca cola 3 15000
+498.jpg|Transaksi berhasil disimpan.
+380.jpg|sate usus 1 3000
+95.jpg|donat 3 9000
+349.jpg|stopmap 9 18000
+607.jpg|Uang keluar : Rp7.000
+355.jpg|floridina 2 10000
+246.jpg|pisang coklat 6 18000
+14.jpg|rames ayam 8 96000
+324.jpg|Rames ayam 5 60000
+643.jpg|phone : +62 812 3456 7890
+402.jpg|Oreo 6 48000
+279.jpg|nasi goreng 8 96000
+170.jpg|nextar 2 4000
+704.jpg|Gunakan pencahayaan alami
+527.jpg|Learning rate too high causes overfitting.
+694.jpg|<OCR_Result> Successful </OCR_Result>
+547.jpg|Jenis transaksi : Penjualan
+248.jpg|pisang coklat 8 24000
+609.jpg|Jumlah total data = 200
+605.jpg|SIstem OCR bekerja dengan stabil
+193.jpg|rames ayam 7 84000
+519.jpg|Folder "dataset berisi semua gambar.
+553.jpg|Saya membeli nasi goreng di kantin
+60.jpg|coacola 12 60000
+518.jpg|Barang keluar tanggal 21/10/2025
+603.jpg|Dataset ini cukup lengkap dan bervariasi
+258.jpg|stopmap 4 80000
+22.jpg|nipis madu 1 7000
+322.jpg|Beng gbeng 4 8000
+503.jpg|Email : admin @koperasi.com
+164.jpg|nasi goreng 9 108000
+282.jpg|nextar 12 24000
+195.jpg|gorengan 3 3000
+400.jpg|Qtela 2 4000
+442.jpg|beng beng 1 2000
+534.jpg|Pengujian dilakukan menggunakan gambar baru.
+353.jpg|floridina 3 15000
+316.jpg|Pizza mini 2 20000
+134.jpg|pisang coklat 11 33000
+103.jpg|sate usus 12 36000
+386.jpg|kentaki 4 40000
+90.jpg|pizza mini 7 70000
+502.jpg|0123456789
+340.jpg|Pizza mini 7 70000
+218.jpg|Pizza 8 80000
+510.jpg|Tokenisasi dilakukan dengan processor
+125.jpg|Aqua 12 48000
+657.jpg|SIstem OCR membaca nota transaksi koperasi mahasiswa
+21.jpg|coca cola 12 60000
+73.jpg|floridina 6 30000
+110.jpg|kentaki 6 60000
+276.jpg|milku 7 42000
+474.jpg|nipis madu 6 42000
+106.jpg|sate usus 5 15000

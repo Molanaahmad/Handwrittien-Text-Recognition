@@ -1,0 +1,471 @@
+# =========================================================
+# INSTALL
+# =========================================================
+!pip uninstall -y transformers accelerate datasets peft -q
+
+!pip install -q \
+transformers==4.46.1 \
+datasets==2.20.0 \
+accelerate==1.12.0 \
+peft==0.12.0 \
+jiwer \
+scikit-learn
+
+# =========================================================
+# MOUNT DRIVE
+# =========================================================
+from google.colab import drive
+drive.mount('/content/drive')
+
+# =========================================================
+# IMPORT
+# =========================================================
+import os
+import cv2
+import torch
+import random
+import pandas as pd
+import numpy as np
+
+from PIL import Image
+from tqdm import tqdm
+
+from sklearn.model_selection import KFold
+
+from datasets import Dataset
+
+from transformers import (
+    TrOCRProcessor,
+    VisionEncoderDecoderModel,
+    Seq2SeqTrainer,
+    Seq2SeqTrainingArguments,
+    default_data_collator
+)
+
+from jiwer import cer, wer
+
+# =========================================================
+# DEVICE
+# =========================================================
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+print("DEVICE :", device)
+
+# =========================================================
+# PATH
+# =========================================================
+image_folder = "/content/drive/MyDrive/Colab Notebooks/dataku/images"
+
+labels_path = "/content/drive/MyDrive/Colab Notebooks/dataku/labels_acak.txt"
+
+save_best_model = "/content/drive/MyDrive/Colab Notebooks/best_kfold_model"
+
+# =========================================================
+# LOAD DATASET
+# =========================================================
+pairs = []
+
+with open(labels_path, "r", encoding="utf-8") as f:
+
+    for line in f:
+
+        if "|" not in line:
+            continue
+
+        fn, txt = line.strip().split("|", 1)
+
+        img_path = os.path.join(image_folder, fn)
+
+        if os.path.exists(img_path):
+
+            pairs.append({
+                "image_path": img_path,
+                "text": txt.strip()
+            })
+
+df = pd.DataFrame(pairs)
+
+print("TOTAL DATA :", len(df))
+
+# =========================================================
+# K-FOLD
+# =========================================================
+kfold = KFold(
+    n_splits=5,
+    shuffle=True,
+    random_state=42
+)
+
+# =========================================================
+# METRIC STORAGE
+# =========================================================
+all_cer = []
+all_wer = []
+
+best_cer = 999
+best_fold = 0
+
+# =========================================================
+# LIGHT AUGMENTATION
+# =========================================================
+def light_augmentation(image):
+
+    img = np.array(image)
+
+    # brightness ringan
+    if random.random() < 0.3:
+
+        alpha = random.uniform(0.9, 1.1)
+        beta  = random.randint(-10, 10)
+
+        img = cv2.convertScaleAbs(
+            img,
+            alpha=alpha,
+            beta=beta
+        )
+
+    # blur ringan
+    if random.random() < 0.2:
+
+        img = cv2.GaussianBlur(
+            img,
+            (3,3),
+            0
+        )
+
+    return Image.fromarray(img)
+
+# =========================================================
+# PREPROCESS
+# =========================================================
+def preprocess(batch, augment=False):
+
+    pixel_values = []
+    labels = []
+
+    for img_path, text in zip(
+        batch["image_path"],
+        batch["text"]
+    ):
+
+        # =============================================
+        # LOAD IMAGE
+        # =============================================
+        image = Image.open(img_path).convert("RGB")
+
+        # =============================================
+        # RESIZE HORIZONTAL
+        # =============================================
+        image = image.resize((512,128))
+
+        # =============================================
+        # AUGMENTATION
+        # =============================================
+        if augment:
+            image = light_augmentation(image)
+
+        # =============================================
+        # PIL -> NUMPY
+        # =============================================
+        img_np = np.array(image)
+
+        # =============================================
+        # GRAYSCALE
+        # =============================================
+        gray = cv2.cvtColor(
+            img_np,
+            cv2.COLOR_RGB2GRAY
+        )
+
+        # =============================================
+        # ADAPTIVE THRESHOLD
+        # =============================================
+        binary = cv2.adaptiveThreshold(
+            gray,
+            255,
+            cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY,
+            15,
+            8
+        )
+
+        # =============================================
+        # KEMBALI KE RGB
+        # =============================================
+        image = Image.fromarray(binary).convert("RGB")
+
+        # =============================================
+        # PROCESSOR
+        # =============================================
+        pv = processor(
+            images=image,
+            return_tensors="pt"
+        ).pixel_values.squeeze()
+
+        # =============================================
+        # TOKENIZER
+        # =============================================
+        lb = processor.tokenizer(
+            text,
+            padding="max_length",
+            truncation=True,
+            max_length=128,
+            return_tensors="pt"
+        ).input_ids.squeeze()
+
+        lb[lb == processor.tokenizer.pad_token_id] = -100
+
+        pixel_values.append(pv)
+        labels.append(lb)
+
+    return {
+        "pixel_values": pixel_values,
+        "labels": labels
+    }
+
+# =========================================================
+# LOOP K-FOLD
+# =========================================================
+fold_num = 1
+
+for train_idx, val_idx in kfold.split(df):
+
+    print("\n")
+    print("================================================")
+    print(f"FOLD {fold_num}")
+    print("================================================")
+
+    # =====================================================
+    # SPLIT
+    # =====================================================
+    train_df = df.iloc[train_idx]
+    val_df   = df.iloc[val_idx]
+
+    train_ds = Dataset.from_pandas(train_df)
+    val_ds   = Dataset.from_pandas(val_df)
+
+    # =====================================================
+    # LOAD MODEL
+    # =====================================================
+    processor = TrOCRProcessor.from_pretrained(
+        "microsoft/trocr-base-handwritten",
+        use_fast=False
+    )
+
+    model = VisionEncoderDecoderModel.from_pretrained(
+        "microsoft/trocr-base-handwritten"
+    )
+
+    model.config.decoder_start_token_id = processor.tokenizer.cls_token_id
+    model.config.pad_token_id = processor.tokenizer.pad_token_id
+    model.config.eos_token_id = processor.tokenizer.eos_token_id
+
+    model.to(device)
+
+    # =====================================================
+    # MAP TRAIN DATASET
+    # =====================================================
+    print("\nMAP TRAIN DATASET...")
+
+    train_ds = train_ds.map(
+        lambda batch: preprocess(batch, augment=True),
+        batched=True,
+        remove_columns=train_ds.column_names,
+        batch_size=8
+    )
+
+    # =====================================================
+    # MAP VALIDATION DATASET
+    # =====================================================
+    print("\nMAP VALIDATION DATASET...")
+
+    val_ds = val_ds.map(
+        lambda batch: preprocess(batch, augment=False),
+        batched=True,
+        remove_columns=val_ds.column_names,
+        batch_size=8
+    )
+
+    # =====================================================
+    # TRAINING ARGUMENT
+    # =====================================================
+    training_args = Seq2SeqTrainingArguments(
+
+        output_dir=f"/content/fold_{fold_num}",
+
+        # batch
+        per_device_train_batch_size=4,
+        per_device_eval_batch_size=4,
+
+        # learning rate
+        learning_rate=3e-5,
+
+        # epoch
+        num_train_epochs=5,
+
+        # regularisasi
+        weight_decay=0.01,
+
+        # evaluasi
+        eval_strategy="epoch",
+
+        # save
+        save_strategy="no",
+
+        # mixed precision
+        fp16=torch.cuda.is_available(),
+
+        # logging
+        logging_steps=20,
+
+        # generate
+        predict_with_generate=True,
+
+        # trainer
+        remove_unused_columns=False,
+
+        report_to="none"
+    )
+
+    # =====================================================
+    # TRAINER
+    # =====================================================
+    trainer = Seq2SeqTrainer(
+
+        model=model,
+
+        args=training_args,
+
+        train_dataset=train_ds,
+
+        eval_dataset=val_ds,
+
+        processing_class=processor,
+
+        data_collator=default_data_collator
+    )
+
+    # =====================================================
+    # TRAIN
+    # =====================================================
+    torch.cuda.empty_cache()
+
+    trainer.train()
+
+    # =====================================================
+    # EVALUATION
+    # =====================================================
+    model.eval()
+
+    y_true = []
+    y_pred = []
+
+    print("\nEVALUATION FOLD", fold_num)
+
+    for item in tqdm(val_df.to_dict("records")):
+
+        image = Image.open(
+            item["image_path"]
+        ).convert("RGB")
+
+        # =============================================
+        # RESIZE
+        # =============================================
+        image = image.resize((512,128))
+
+        # =============================================
+        # PREPROCESS
+        # =============================================
+        img_np = np.array(image)
+
+        gray = cv2.cvtColor(
+            img_np,
+            cv2.COLOR_RGB2GRAY
+        )
+
+        binary = cv2.adaptiveThreshold(
+            gray,
+            255,
+            cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY,
+            15,
+            8
+        )
+
+        image = Image.fromarray(binary).convert("RGB")
+
+        # =============================================
+        # PROCESSOR
+        # =============================================
+        pixel_values = processor(
+            images=image,
+            return_tensors="pt"
+        ).pixel_values.to(device)
+
+        # =============================================
+        # GENERATE
+        # =============================================
+        generated_ids = model.generate(
+            pixel_values,
+            max_new_tokens=128
+        )
+
+        pred_text = processor.batch_decode(
+            generated_ids,
+            skip_special_tokens=True
+        )[0].strip()
+
+        gt_text = item["text"].strip()
+
+        y_true.append(gt_text)
+        y_pred.append(pred_text)
+
+    # =====================================================
+    # METRICS
+    # =====================================================
+    fold_cer = cer(y_true, y_pred) * 100
+    fold_wer = wer(y_true, y_pred) * 100
+
+    all_cer.append(fold_cer)
+    all_wer.append(fold_wer)
+
+    print("\n==============================")
+    print(f"FOLD {fold_num} RESULT")
+    print("==============================")
+    print(f"CER : {fold_cer:.2f}%")
+    print(f"WER : {fold_wer:.2f}%")
+    print(f"AKURASI KARAKTER : {100-fold_cer:.2f}%")
+    print("==============================")
+
+    # =====================================================
+    # SAVE BEST MODEL
+    # =====================================================
+    if fold_cer < best_cer:
+
+        best_cer = fold_cer
+        best_fold = fold_num
+
+        print(f"\nSAVE BEST MODEL FROM FOLD {fold_num}")
+
+        model.save_pretrained(save_best_model)
+        processor.save_pretrained(save_best_model)
+
+    fold_num += 1
+
+# =========================================================
+# FINAL RESULT
+# =========================================================
+print("\n")
+print("================================================")
+print("HASIL AKHIR K-FOLD")
+print("================================================")
+
+print(f"BEST FOLD : {best_fold}")
+print(f"BEST CER  : {best_cer:.2f}%")
+
+print(f"RATA-RATA CER : {np.mean(all_cer):.2f}%")
+print(f"RATA-RATA WER : {np.mean(all_wer):.2f}%")
+
+print(f"RATA-RATA AKURASI : {100 - np.mean(all_cer):.2f}%")
+
+print("================================================")

@@ -88,14 +88,13 @@ Setiap gambar memiliki label teks sebagai ground truth yang digunakan dalam pros
 Struktur dataset secara umum:
 
 ```text
-dataset/
-├── images/
+dataset
 │   ├── image_001.png
 │   ├── image_002.png
 │   ├── image_003.png
 │   └── ...
 │
-└── labels.txt
+└── labels_training.txt
 ```
 
 > Dataset penelitian tidak seluruhnya disertakan dalam repository apabila terdapat pertimbangan privasi atau keterbatasan distribusi data.
@@ -233,8 +232,12 @@ skripsi-htr-trocr/
 ├── README.md
 │   └── Dokumentasi repository
 │
-└── .gitignore
-    └── Daftar file/folder yang tidak diunggah ke repository
+└── Dataset
+│   └── Dataset training TrOCR model
+│
+│
+└── Training.txt
+    └── Kode training
 ```
 
 > Struktur folder dapat disesuaikan dengan struktur kode penelitian yang digunakan.
@@ -244,13 +247,13 @@ skripsi-htr-trocr/
 Clone repository:
 
 ```bash
-git clone https://github.com/USERNAME/skripsi-htr-trocr.git
+git clone https://github.com/Molanaahmad/Handwritten-Text-Recognition.git
 ```
 
 Masuk ke folder repository:
 
 ```bash
-cd skripsi-htr-trocr
+cd Handwritten-Text-Recognition
 ```
 
 Install dependency:
@@ -264,7 +267,7 @@ pip install -r requirements.txt
 Setelah seluruh dependency terinstall, aplikasi dapat dijalankan dengan:
 
 ```bash
-python application/app.py
+python application/apk2.py
 ```
 
 Pastikan model dan dependency yang diperlukan telah tersedia sebelum menjalankan aplikasi.
